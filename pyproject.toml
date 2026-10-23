@@ -1,0 +1,19 @@
+[project]
+name = "scons-vcpkg"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "szymonhrehorowicz", email = "szymhre@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "scons>=4.11.1",
+]
+
+[project.scripts]
+scons-vcpkg = "scons_vcpkg:main"
+
+[build-system]
+requires = ["uv_build>=0.13.5,<0.14.0"]
+build-backend = "uv_build"
